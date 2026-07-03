@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: viralstream-bot
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main.py
+    envVars:
+      - key: BOT_TOKEN
+        value: 8351350268:AAFVrxdthzfJyHgGgI0OmC20spcmkyq1g6A
+      - key: ADMIN_IDS
+        value: 7246565833
